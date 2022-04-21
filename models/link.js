@@ -18,13 +18,6 @@ module.exports = (sequelize, DataTypes) => {
         },
       })
 
-      link.hasMany(models.sosmed, {
-        as: "sosmed",
-        foreignKey: {
-          name: "idLink",
-        },
-      })
-
     }
   }
   link.init({
@@ -34,7 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     image: DataTypes.STRING,
     uniqid: DataTypes.STRING,
     visit: DataTypes.INTEGER,
-    links: DataTypes.STRING
+    facebook: DataTypes.STRING,
+    instagram: DataTypes.STRING,
+    twitter: DataTypes.STRING,
+    youtube: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'link',

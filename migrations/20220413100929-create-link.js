@@ -32,7 +32,16 @@ module.exports = {
       visit: {
         type: Sequelize.INTEGER
       },
-      links: {
+      facebook: {
+        type: Sequelize.STRING
+      },
+      instagram: {
+        type: Sequelize.STRING
+      },
+      twitter: {
+        type: Sequelize.STRING
+      },
+      youtube: {
         type: Sequelize.STRING
       },
       createdAt: {

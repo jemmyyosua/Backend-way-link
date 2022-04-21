@@ -8,10 +8,13 @@ exports.addLink = async (req,res) =>{
             idUser: req.user.id,
             image : req.file.filename,
             title : req.body.title,
-            links : req.body.links,
             description : req.body.description,
             uniqid : uniq,
             visit : 0,
+            facebook : req.body.facebook,
+            instagram : req.body.instagram,
+            twitter : req.body.twitter,
+            youtube : req.body.youtube,
         }
 
         const hasil = await link.create(data)
